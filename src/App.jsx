@@ -1,5 +1,6 @@
 import Button from "./components/Button";
 import { faHome, faUser, faSearch } from "@fortawesome/free-solid-svg-icons";
+import Footer from "./components/Footer";
 const App = () => {
   return (
     <div className="w-[700px] h-screen mx-auto overflow-hidden grid grid-cols-1 sm:grid-cols-4 place-items-center">
@@ -20,13 +21,13 @@ const App = () => {
         Text
       </Button>
       <Button color="danger" text>
-        Text
+        Danger
       </Button>
       <Button color="success" text>
-        Text
+        Success
       </Button>
       <Button color="warning" text>
-        Text
+        Warning
       </Button>
       <Button color="secondary" disableShadow>
         No Shadow
@@ -37,6 +38,7 @@ const App = () => {
       <Button color="secondary" icon={faSearch} iconPosition="right">
         Icon Right
       </Button>
+      <Footer />
     </div>
   );
 };
